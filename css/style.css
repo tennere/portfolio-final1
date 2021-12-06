@@ -45,6 +45,7 @@ p{
   justify-content: center;
   margin: auto;
   padding-bottom: 40px;
+  font-size: 80%;
 }
 
 img{
@@ -87,6 +88,11 @@ img{
   object-fit: cover;
 }
 
+.grid img{
+  width: 400px;
+  height: 300px;
+}
+
 .grid3 img:nth-child(2){
   height: 100%;
   align-self: center;
@@ -94,15 +100,17 @@ img{
 
 .grid{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-template-rows: repeat(3, 1fr); */
   grid-gap: 10px;
 }
 
 .grid2{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-gap: 10px;
   padding-bottom: 30px;
 }
@@ -257,12 +265,14 @@ input[type=submit]:hover {
 
 /* Add a background color and some padding around the form */
 .contact_form {
-  border-radius: 5px;
-  background-color: rgb(252, 220, 225);
-  padding: 20px;
-  width: 80%;
-  margin: auto;
-} 
+  background: black;
+  color: white;
+}
+
+  
+/* #contact-h4{
+  display: none;
+} */
 
 
 
@@ -308,11 +318,18 @@ input[type=submit]:hover {
   .grid3{
     display: grid;
     grid-template-columns: 1.7fr 2fr 1.7fr;
+    grid-template-rows: auto;
     grid-gap: 5px;
     padding-bottom: 100px;
     padding-top: 50px;
   }
 
+  .grid4{
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-rows: 100px; */
+    width: 80%;
+    margin: auto;
+  }
   .container {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -407,20 +424,91 @@ h3{
   margin-top: auto;
 }
 
+.contact_form {
+  border-radius: 5px;
+  background-color: rgb(252, 220, 225);
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  color: black;
+} 
+
+/* .contact_form {
+  background:rgb(252, 220, 225);
+  color: white;
+} */
 
 
 
 /* LARGE VIEW */
 @media screen and (min-width: 1200px) {
 
+  .grid4{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 90%;
+  }
+
+  .first{
+    grid-row: 1 / span 1;
+  }
+
+  .third{
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+  }
 
 
+  #desktop-experience-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+  }
 
+  #desktop-experience-imgs{
+    width: 70%
+  }
 
+  #delete{
+    display: none;
+  }
 
+  h2{
+    text-decoration: underline;
+  }
 
+  .experience-header{
+    padding-bottom: 70px;
+  }
 
+  .contact_form{
+    background-color: #3fa1e6;
+    color: white;
+    width: 75%;
+    border-radius: 10px;
+  }
+
+  ul li::before{
+    content: "• ";
+  }
+
+  ul li::after{
+    content: " •";
+  }
+
+  /* h4{
+    text-align: center;
+  }
+
+  #contact-h4{
+    display: inline;
+    text-align: center;
+  } */
 }
+
+
+
 
 /* turns off animation if prefers reduced motion */
 @media (prefers-reduced-motion){
