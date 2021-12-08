@@ -65,7 +65,6 @@ img{
   align-items: center;
   padding-right: 30px;
   padding-left: 30px;
-
 }
 
 .container img{
@@ -221,14 +220,13 @@ nav a:hover{
 }
 
 
-
 /* contact form */
 
 /* TAKEN FROM w3 SCHOOLS */
 input[type=text], select, textarea {
   width: 100%; /* Full width */
-  padding: 15px; /* Some padding */ 
-  border: 2px solid black; /* Gray border */
+  padding: 15px; /*  padding */ 
+  border: 2px solid black; /*  border */
   border-radius: 10px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 10px; /* Add a top margin */
@@ -252,7 +250,6 @@ input[type=submit]:hover {
   background: black;
   color: white;
 }
-
 
 
 
@@ -328,7 +325,7 @@ input[type=submit]:hover {
 
 
 /* flip card*/
- /* from w3 schools! */
+ /* adapted from w3 schools */
  .flip-card {
   background-color: rgb(252, 220, 225);
   width: auto;
@@ -347,7 +344,7 @@ input[type=submit]:hover {
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+/* Do a horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner, .flip-card:focus-within .flip-card-inner,
 .flip-card:active .flip-card-inner,
 .flip-card:focus .flip-card-inner {
